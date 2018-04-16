@@ -1,1 +1,20 @@
-e2-e3 a2-a5 
+e2-e3
+8 r n b q k b n r 
+7 p p p p p p p p 
+6                 
+5                 
+4                 
+3         P       
+2 P P P P   P P R 
+1 R N B Q K B N P 
+  a b c d e f g h 
+a2-a5
+8 r n b q k b n r 
+7 p p p p p p p p 
+6                 
+5 P               
+4                 
+3         P       
+2   P P P   P P R 
+1 R N B Q K B N P 
+  a b c d e f g h 

@@ -12,7 +12,7 @@ void boardMove(char A[][9])
   {
     scanf("%s", str);
     if(strcmp(str, "exit") == 0) break;
-    fprintf(f, "%s ", str);
+    fprintf(f, "%s\n", str);
     
     for(int m = 0; m < 8; m++)
     {
@@ -30,6 +30,12 @@ void boardMove(char A[][9])
     else {temp = A[i][j];
     A[i][j] = A[y][d];
     A[y][d] = temp;
+    for(int i = 0; i < 9; i++)
+  {
+    for(int j = 0; j < 9; j++)
+      fprintf(f, "%c ", A[i][j]);
+    fprintf(f, "\n"); 
+  }
     j = 10; i = 10; d = 10; y = 10;}
     
     boardPrint(A);
