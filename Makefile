@@ -1,19 +1,19 @@
-all: hello
+all: bin/hello
 
-hello: build/main.o build/board.o build/boardC.o build/boardMove.o
-	gcc -Wall -Werror build/main.o build/board.o build/boardC.o build/boardMove.o -o hello
+bin/hello: build/main.o build/board.o build/boardC.o build/boardMove.o
+	gcc -Wall -Werror build/main.o build/board.o build/boardC.o build/boardMove.o -o bin/hello
 
-build/main.o: main.c
-	gcc -Wall -Werror -c main.c -o build/main.o
+build/main.o: src/main.c
+	gcc -Wall -Werror -c src/main.c -o build/main.o
 
-build/board.o: board.c
-	gcc -Wall -Werror -c board.c -o build/board.o
+build/board.o: src/board.c
+	gcc -Wall -Werror -c src/board.c -o build/board.o
 
-build/boardC.o: boardC.c
-	gcc -Wall -Werror -c boardC.c -o build/boardC.o
+build/boardC.o: src/boardC.c
+	gcc -Wall -Werror -c src/boardC.c -o build/boardC.o
 
-build/boardMove.o: boardMove.c
-	gcc -Wall -Werror -c boardMove.c -o build/boardMove.o
+build/boardMove.o: src/boardMove.c
+	gcc -Wall -Werror -c src/boardMove.c -o build/boardMove.o
 
 .PHONY : clean
 clean:
