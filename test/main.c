@@ -24,7 +24,7 @@ CTEST(Syntax, Incorrect) {
 }
 
 CTEST(Syntax, Synt) {
-    bool result = boardMove(A, "e2-e7");
+    bool result = boardMove(A, "2e-7e");
     ASSERT_FALSE(result);
 }
 
