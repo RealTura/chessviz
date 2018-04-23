@@ -22,7 +22,7 @@ build/boardMove.o: src/boardMove.c
 	gcc -std=c99 -Wall -Werror -c src/boardMove.c -o build/boardMove.o
 
 build/main_test.o: test/main.c
-	gcc -std=c99 -I thirdparty -Wall -Werror -c test/main.c -o build/main_test.o
+	gcc -std=c99 -I thirdparty -I src -c test/main.c -o build/main_test.o
 
 .PHONY : clean
 clean:
